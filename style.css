@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
 
 *{
   box-sizing: border-box;
@@ -20,13 +20,23 @@ form{
 input[type="text"]{
   width: 300px;
   margin: 0.5em;
+  margin-right: 0;
+  border: 1px solid gray;
+  border-right: none;
   padding: 0.5em;
   outline: none;
+}
+
+i{
+  color: white;
 }
 
 button{
   margin: 0.5em;
   margin-left: 0;
+  border: 1px solid gray;
+  background-color: gray;
+  border-left: none;
   padding: 0.5em;
   cursor: pointer;
 }
@@ -54,7 +64,8 @@ div.gallery img {
 }
 
 div.desc {
-  font-family: 'Lobster', cursive;
+  font-family: 'Ubuntu', sans-serif;
+  color: grey;
   font-size: medium;
   padding: 15px;
   text-align: center;
