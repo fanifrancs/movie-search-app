@@ -1,7 +1,7 @@
-let inputField = document.querySelector('input');
-let searchBtn = document.querySelector('button');
-let container = document.querySelector('.container');
-let query, url, res, data;
+let inputField = document.querySelector('input'),
+searchBtn = document.querySelector('button'),
+container = document.querySelector('.container'),
+query, url, res, data;
 
 searchBtn.addEventListener('click', getMovies);
 
@@ -48,14 +48,14 @@ async function getMovies(event) {
 // }
 
 function renderMovies(param) {
-    param['Search'].forEach((movie) => {
-        container.innerHTML += `
-        <div class="gallery">
-            <img src="${movie.Poster}" alt="${movie.Title}">
-            <div class="desc">
-                <span>${movie.Title}</span> <span>(${movie.Year})</span> 
-                <p>${movie.Type}</p>
-            </div>
-        </div>`
-    })
+  param['Search'].forEach((movie) => {
+    container.innerHTML += `
+    <div class="gallery">
+      <img src="${movie.Poster}" alt="${movie.Title}">
+      <div class="desc">
+        <span>${movie.Title}</span> <span>(${movie.Year})</span> 
+        <p>${movie.Type}</p>
+      </div>
+    </div>`
+  })
 }
